@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#a5d8eb"
+        android:clipToPadding="false"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:clipChildren="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="48dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:alpha="1"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardElevation="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:dividerPadding="0dp"
+                    android:hapticFeedbackEnabled="false"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="0dp"
+                        android:alpha="1"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:paddingTop="0dp">
+
+                        <TextView
+                            android:id="@+id/PersonalLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:padding="10dp"
+                            android:text="Personal data"
+                            android:textAlignment="viewStart"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:paddingTop="0dp">
+
+                        <ImageView
+                            android:id="@+id/Icono_nombre"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="false"
+                            android:alpha="0.4"
+                            android:backgroundTintMode="screen"
+                            android:padding="5dp"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/round_account_circle_black_36" />
+
+                        <EditText
+                            android:id="@+id/enter_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Name"
+                            android:inputType="textPersonName"
+                            android:padding="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:paddingTop="0dp">
+
+                        <ImageView
+                            android:id="@+id/Icono_apellido"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="false"
+                            android:alpha="0.4"
+                            android:backgroundTintMode="screen"
+                            android:padding="5dp"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/round_account_circle_black_36" />
+
+
+                        <EditText
+                            android:id="@+id/enter_surname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Surname"
+                            android:inputType="textPersonName"
+                            android:padding="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:paddingTop="0dp">
+
+                        <ImageView
+                            android:id="@+id/Icono_fecha"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="false"
+                            android:alpha="0.4"
+                            android:backgroundTintMode="screen"
+                            android:padding="5dp"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/round_event_black_36" />
+
+
+                        <EditText
+                            android:id="@+id/enter_birth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Birthday"
+                            android:inputType="date"
+                            android:padding="10dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:paddingTop="0dp">
+
+                        <ImageView
+                            android:id="@+id/Icono_telefono"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="false"
+                            android:alpha="0.4"
+                            android:backgroundTintMode="screen"
+                            android:padding="5dp"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/round_phone_black_36" />
+
+
+                        <EditText
+                            android:id="@+id/enter_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Phone"
+                            android:inputType="number"
+                            android:padding="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:paddingTop="0dp">
+
+                        <ImageView
+                            android:id="@+id/Icono_email"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="false"
+                            android:alpha="0.4"
+                            android:backgroundTintMode="screen"
+                            android:padding="5dp"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/round_email_black_36" />
+
+
+                        <EditText
+                            android:id="@+id/enter_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="E-mail"
+                            android:inputType="textEmailAddress"
+                            android:padding="10dp" />
+                    </LinearLayout>
+
+
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <RadioButton
+                            android:id="@+id/radio_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:padding="5dp"
+                            android:text="Male"
+                            android:textAlignment="center"
+                            android:textColorLink="@android:color/holo_blue_light" />
+
+                        <RadioButton
+                            android:id="@+id/radio_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:padding="5dp"
+                            android:text="Female"
+                            android:textAlignment="center" />
+                    </RadioGroup>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="24dp"
+                        android:background="#5a000000"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="0dp"
+                        android:divider="?android:attr/listDivider"
+                        android:dividerPadding="5dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:paddingTop="0dp">
+
+                        <TextView
+                            android:id="@+id/DirectionLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:padding="10dp"
+                            android:text="Direction data "
+                            android:textAlignment="viewStart"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:paddingTop="0dp">
+
+                        <ImageView
+                            android:id="@+id/Icono_direccion"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="false"
+                            android:alpha="0.4"
+                            android:backgroundTintMode="screen"
+                            android:padding="5dp"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/round_location_city_black_36" />
+
+
+                        <EditText
+                            android:id="@+id/enter_direction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Postal direction"
+                            android:inputType="textPostalAddress"
+                            android:padding="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:paddingTop="0dp">
+
+                        <ImageView
+                            android:id="@+id/Icono_pais"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="false"
+                            android:alpha="0.4"
+                            android:backgroundTintMode="screen"
+                            android:padding="5dp"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/round_location_on_black_36" />
+
+
+                        <EditText
+                            android:id="@+id/enter_country"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Country"
+                            android:inputType="textPersonName"
+                            android:padding="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:paddingTop="0dp">
+
+                        <ImageView
+                            android:id="@+id/Icono_cp"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="false"
+                            android:alpha="0.4"
+                            android:backgroundTintMode="screen"
+                            android:padding="5dp"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/round_location_on_black_36" />
+
+
+                        <EditText
+                            android:id="@+id/enter_cp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Postal code"
+                            android:inputType="number"
+                            android:padding="10dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="24dp"
+                        android:background="#5a000000"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="0dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:paddingTop="0dp">
+
+                        <TextView
+                            android:id="@+id/PasswordLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto"
+                            android:padding="10dp"
+                            android:text="Password"
+                            android:textAlignment="viewStart"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:paddingTop="0dp">
+
+                        <ImageView
+                            android:id="@+id/Icono_pass"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="false"
+                            android:alpha="0.4"
+                            android:backgroundTintMode="screen"
+                            android:padding="5dp"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/round_lock_black_36" />
+
+
+                        <EditText
+                            android:id="@+id/enter_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:padding="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:paddingTop="0dp">
+
+                        <ImageView
+                            android:id="@+id/Icono_confirmpass"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="false"
+                            android:alpha="0.4"
+                            android:backgroundTintMode="screen"
+                            android:padding="5dp"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/round_lock_black_36" />
+
+
+                        <EditText
+                            android:id="@+id/enter_confirm_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Confirm Password"
+                            android:inputType="textPassword"
+                            android:padding="10dp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:foreground="?android:selectableItemBackground"
+                        android:id="@+id/RegisterBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginEnd="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@android:color/holo_green_light"
+                        android:fontFamily="@font/roboto_bold"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:text="Register"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+
+                    <Button
+                        android:foreground="?selectableItemBackground"
+                        android:id="@+id/loginFacebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginEnd="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#3b5998"
+                        android:fontFamily="@font/roboto_bold"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:text="Login with Facebook"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
